@@ -1,0 +1,15 @@
+services:
+  api:
+    container_name: imersao_api
+    # Constrói a imagem a partir do Dockerfile no diretório atual (.)
+    build: .
+    # Mapeia a porta 8000 do host para a porta 8000 do contêiner
+    ports:
+      - "8000:8000"
+    # Define variáveis de ambiente para o contêiner.
+    # Útil para configurar a aplicação sem alterar o código.
+    # Nota: Para usar esta variável, o código Python (database.py)
+    # precisaria ser ajustado para ler a URL do banco de dados do ambiente.
+    volumes:
+      - .:/app
+    # Conecta o serviço a uma rede customizada para melhor isolamento e comunicação.
