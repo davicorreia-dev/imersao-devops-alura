@@ -1,0 +1,25 @@
+# Ignorar arquivos compilados do Python
+__pycache__/
+*.py[cod]
+
+# Ignorar ambientes virtuais
+venv/
+ENV/
+env/
+.venv/
+
+# Ignorar banco de dados local
+*.db
+
+# Ignorar configurações do VSCode (opcional)
+.vscode/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Docker (opcional, dependendo do uso)
+docker-compose.override.yml
